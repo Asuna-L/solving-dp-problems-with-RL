@@ -19,7 +19,7 @@
   - 1.5 promote for this topic
 
 > How to use it
-1. short introduction
+1. Short Introduction
    I only upate my first 3 attempts to construct Envs for 3 classic dynamic programming problems like 0-1 Bag, House Robbery.
     - Qustion :
       1. _**House Robbery:**_
@@ -35,7 +35,12 @@
         Given a grid reprecenting the position, in which $****$ reprecenting the cliff and $EEEE$ reprecenting the destination. You are in the orign(upper left corner).Find the shortest methods to get to the destination.
 
         Take clos = $12$, rows = $4$ , cliff = $[3,1:10]$, destination = $[3,11]$
+   
         ![image](https://github.com/user-attachments/assets/4eb8a4df-4dd6-4250-bc81-0dccd953aa70)
+
+2. Parkage
+
+   `Env` now has 3 enviroment that I constructed for the problem. Each need to contain property `action space`、`P` 、 `n` 、and `other elements` and function `createP` ,to creat Probability Transform Function with shape $P[state][action] = (p,next_state,reward,done)$, and `print_agent`, to print specific policy for problem.
 
 
         
