@@ -1,17 +1,36 @@
-# Record for my _Reinforcing Learning Process_
+# Record for my _Reinforcement Learning Process_
   This project is my studying **dairy record**. I will share what I learn and write it here if time permitted. And definetely I will keep updating this journal.
   **Welcome any suggestions! Thank you all!**  
 ## 1.Tring to Use RL to Sovle basic Dp Problem
 
-  - 1.1 Basic info for Reinforcing Learning
+  - 1.1 Basic info for Reinforcement Learning
 
+    - Reinforcement learning is a computational method in which a machine achieves its goals by interacting with the environment.
+    - Designed to sovle Sequential Decision Making task. Agent need to resposible for the furture and make further decisions at a future point in time.
+      ![image](https://github.com/user-attachments/assets/86edc2d5-6c83-43bd-b6b1-28324b591e26)
+    - The agent has three key elements, namely `perception`( The agent perceives the state of the environment to some extent, and thus knows the current situation it is in) , `decision-making`(The process by which an agent calculates the actions it needs to take to achieve its goal based on its current state is called decision making) and `reward`(The environment generates a scalar signal as reward feedback based on the state and the actions taken by the agent).
+
+    - A reinforcement learning need an agent that takes actions based on specific policy to achieve the goal and interact with the environment , and gets the feedback to estimate the value of specific action and state, thus optimizing its policy in next turn util it finds the best policy to achieve the goal.
+    - basic elements:
+        - _**agent**_:
+          - `state space`
+          - `action space`
+          - `reward`
+          - `state transition function`
+          - `state-value function`
+        - _**enviroment**_ :
+          - The environment sampling the next state based on the current state and the action of the agent.
+          - The probability distribution of the environment's state at the next moment will be jointly determined by the current state and the agent's action.
+
+            $Next Stae$ ~  $P(.|Current State, Agent' Action)$
+        - _**occupancy measure**_
   - 1.2 Stochastic Process & Marcov Decision Progress
 
   - 1.3 Two Basic Dynamic Programming Methods for MDP optimazation
       - Policy Iteration
       - Value Iteration 
 
-  - 1.4 Temporal Difference methods for model-free Reinforcing learning
+  - 1.4 Temporal Difference methods for model-free Reinforcement learning
       - Monte-Carlo methods
       - Saras & n-step-Saras
       - Q-learning
