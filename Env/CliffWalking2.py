@@ -2,7 +2,8 @@ from env1 import Env1
 
 
 class CliffWalkingEnv(Env1):
-    def __init__(self, ncol, nrow):
+    def __init__(self, ncol, nrow,disaster,goal):
+        self.name = 'Cliff Walking'
         # parameters
         self.nrow = nrow
         self.ncol = ncol
@@ -19,7 +20,8 @@ class CliffWalkingEnv(Env1):
         self.x = min(self.ncol - 1, max(0, self.x + self.action[a][0]))
         self.y = min(self.nrow - 1, max(0, self.y + self.action[a][1]))
 
-        next_state = self.y * self.ncol + self.x
+        # next_state = self.y * self.ncol + self.x
+        next_state = (self.x, self.y)
         reward = self.reward
         done = False
         if self.y == self.nrow - 1 and self.x > 0:
@@ -31,4 +33,6 @@ class CliffWalkingEnv(Env1):
     def reset(self):
         self.x = 0
         self.y = self.nrow - 1
-        return self.y * self.ncol + self.x
+        # return self.y * self.ncol + self.x
+        return (self.x, self.y)
+

@@ -6,7 +6,7 @@
   - 1.1 Basic info for Reinforcement Learning
 
     - Reinforcement learning is a computational method in which a machine achieves its goals by interacting with the environment.
-    - Designed to sovle Sequential Decision Making task. Agent need to resposible for the furture and make further decisions at a future point in time.
+    - Designed to solve Sequential Decision Making task. Agent need to resposible for the furture and make further decisions at a future point in time.
       ![image](https://github.com/user-attachments/assets/86edc2d5-6c83-43bd-b6b1-28324b591e26)
     - The agent has three key elements, namely `perception`( The agent perceives the state of the environment to some extent, and thus knows the current situation it is in) , `decision-making`(The process by which an agent calculates the actions it needs to take to achieve its goal based on its current state is called decision making) and `reward`(The environment generates a scalar signal as reward feedback based on the state and the actions taken by the agent).
 
@@ -17,7 +17,7 @@
           - `action space`
           - `reward`
           - `state transition function`
-          - `state-value function`
+          - `state-value f[.gitignore](.gitignore)unction`
         - _**enviroment**_ :
           - The environment sampling the next state based on the current state and the action of the agent.
           - The probability distribution of the environment's state at the next moment will be jointly determined by the current state and the agent's action.
